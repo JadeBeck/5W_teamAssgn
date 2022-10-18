@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <title>Hello Socket.io!</title>
+</head>
+<body>
+<script>
+    const socket = io("ws://localhost:3000");
+    socket.on("connect", () => {
+        socket.send("헹헹 혀니 화이똉");  //①이건 서버에서 데이터 보내는 코드. 첫번째로 클라이언트가 브라우저에서 웹 서버에 접속이 성공하면 "~" 이렇게 보내는 것.
+    });
+
+    socket.on("customEventName", (data) => {  //②의 데이터 받아서
+        console.log(data); //② 출력함
+    });
+
+    socket.on("message", (data) => {
+        console.log(data);
+    });
+
+</script>
+</body>
+</html>

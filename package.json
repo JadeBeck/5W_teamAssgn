@@ -1,7 +1,6 @@
 {
   "name": "4w_indivassgn(ver.sequelize)",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +9,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "express": "^4.18.2",
     "joi": "^17.6.3",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.25.0"
+    "sequelize": "^6.25.1",
+    "socket.io": "^4.5.2"
   },
   "devDependencies": {
     "sequelize-cli": "^6.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JadeBeck/4W_indivAssgn-ver.sequelize-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JadeBeck/4W_indivAssgn-ver.sequelize-/issues"
+  },
+  "homepage": "https://github.com/JadeBeck/4W_indivAssgn-ver.sequelize-#readme",
+  "description": ""
 }
